@@ -1,0 +1,123 @@
+/*
+
+Bootstrap Breakpoints/Classes
+
+Extra small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+
+*/
+
+/* Laptops down */
+
+@media only screen and (max-width: 1200px) {
+	.contact-wrapper {
+		flex-direction: column;
+		padding: 2em 0;
+		margin: 3em auto 0;
+	}
+
+	.contact-letter-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.contact-letter {
+			margin: 0;
+		}
+	}
+}
+
+/* Laptops only */
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+	.hero {
+		padding-top: 2em;
+		margin: 4em 2em;
+	}
+
+	#hero__img img {
+		width: 26em;
+		height: auto;
+	}
+}
+
+/* Tablets down */
+
+// @media only screen and (max-width: 992px) {
+
+// }
+
+/* Tablets only */
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+	.hero {
+		flex-direction: column;
+		padding: 2em 0;
+		margin: 3em auto;
+		align-items: center;
+		width: 80%;
+	}
+
+	.hero__btns {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2em !important;
+
+		.solid-btn {
+			margin-bottom: 1em;
+		}
+
+		.hero__icons {
+			margin-left: 0;
+		}
+	}
+
+	#hero__img img {
+		width: 20em;
+		height: auto;
+	}
+}
+
+/* Phones and down */
+
+@media screen and (max-width: 576px) {
+	.hero {
+		flex-direction: column;
+	}
+
+	.hero__icons {
+		margin-left: 0;
+	}
+
+	.hero__btns {
+		flex-direction: column;
+		gap: 1em;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2em !important;
+		margin-bottom: 0;
+	}
+
+	#hero__img img {
+		width: 16em;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.footer-icons {
+		display: none;
+	}
+}
+
+/* Extra small phones only */
+
+@media screen and (max-width: 320px) {
+	#neal-copyright {
+		flex: 2;
+	}
+}

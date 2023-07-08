@@ -1,0 +1,130 @@
+.contact-wrapper {
+	display: flex;
+	background-color: $dark-green;
+	margin-top: 4rem;
+	padding: 2rem 16rem;
+}
+
+.contact-h3 {
+	font-size: 2.25rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 130%;
+}
+
+.contact-h4 {
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 165.5%;
+}
+
+.form-col {
+	flex: 1;
+	padding: 2rem;
+}
+
+.contact-links-col {
+	flex: 1;
+	padding: 2rem;
+}
+
+.contact-link {
+	color: #bc6c25;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	overflow-wrap: break-word;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	margin: 2em 0;
+}
+
+label {
+	color: $light-gray;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	max-width: 32.625rem;
+	padding: 1rem 1.6875rem 1rem 1rem;
+	border-radius: 0.4375rem !important;
+	border: 2px solid $light-gray;
+	background-color: $dark-green;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #e5e2d7bf !important;
+	font-size: 1.125rem !important;
+	font-style: normal !important;
+	font-weight: 600 !important;
+	line-height: normal !important;
+}
+
+input[type="checkbox"] {
+	margin-right: 1rem;
+	width: 1.5625rem;
+	height: 1.5625rem;
+	flex-shrink: 0;
+	border-radius: 0.1875rem;
+	// border: 2px solid #e5e2d7;
+	background-color: $dark-green;
+}
+
+.form-check {
+	display: flex;
+	align-items: center;
+}
+
+.form-check-label {
+	color: $light-gray;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.form-check-input {
+	background-image: url("/assets/svgs/checkbox.svg");
+	width: 9.875rem;
+	height: 1.8125rem;
+	border: none;
+
+	&:focus {
+		background-image: url("/assets/svgs/checkbox.svg");
+		background-color: $dark-green !important;
+		box-shadow: none;
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+
+	&:checked[type="checkbox"] {
+		background-color: $dark-green;
+		background-image: url("/assets/svgs/checkmark.svg");
+	}
+}
+
+textarea {
+	background-color: $dark-green !important;
+}
+
+.contact-thank-you {
+	margin-top: 7rem;
+}
+
+.contact-letter {
+	margin: 2rem 2rem 0 0;
+}

@@ -1,0 +1,86 @@
+// html {
+// font-size: 16px;
+// font-size: 62.5%;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1.5rem 0 1rem 0;
+	font-style: normal;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 800;
+	line-height: normal;
+	color: $dark-green;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 153.693%;
+	color: $light-gray;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: normal;
+	color: $light-gray;
+}
+
+h4 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: normal;
+	color: $light-gray;
+}
+
+p {
+	font-size: 1.31669rem;
+	font-weight: 500;
+	line-height: 196.023%;
+
+	&.light {
+		color: $light-gray;
+	}
+
+	&.dark {
+		color: $dark-gray;
+	}
+
+	&.tiny {
+		color: $light-gray !important;
+		font-size: 0.75rem !important;
+		font-style: normal !important;
+		font-weight: 500 !important;
+		line-height: normal !important;
+	}
+}
+
+a {
+	color: $light-gray;
+	text-decoration: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.small-caps {
+	font-variant: all-small-caps;
+	color: $light-gray;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
