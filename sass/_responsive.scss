@@ -36,7 +36,7 @@ Extra extra large	xxl	≥1400px
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
 	.hero {
 		padding-top: 2em;
-		margin: 4em 2em;
+		margin: 4em 2em 0;
 	}
 
 	#hero__img img {
@@ -57,7 +57,7 @@ Extra extra large	xxl	≥1400px
 	.hero {
 		flex-direction: column;
 		padding: 2em 0;
-		margin: 3em auto;
+		margin: 3em auto 0;
 		align-items: center;
 		width: 80%;
 	}
@@ -80,6 +80,22 @@ Extra extra large	xxl	≥1400px
 	#hero__img img {
 		width: 20em;
 		height: auto;
+	}
+
+	.skills-container {
+		padding-bottom: 4em;
+
+		h2 {
+			margin-bottom: 1.5em;
+		}
+
+		h4 {
+			margin: 0.33em;
+		}
+
+		.skills {
+			gap: 1.5em;
+		}
 	}
 }
 
@@ -109,6 +125,19 @@ Extra extra large	xxl	≥1400px
 		margin: 0 auto;
 	}
 
+	.skills {
+		flex-direction: column;
+		padding-bottom: 3em;
+
+		h3 {
+			margin-top: 2em;
+		}
+
+		h4 {
+			margin: 0;
+		}
+	}
+
 	.footer-icons {
 		display: none;
 	}
@@ -117,6 +146,27 @@ Extra extra large	xxl	≥1400px
 /* Extra small phones only */
 
 @media screen and (max-width: 320px) {
+	.skills-container {
+		h2 {
+			font-size: 2em;
+		}
+
+		.skills {
+			padding-bottom: 2em;
+
+			.skill {
+				h3 {
+					font-size: 1.5em;
+					margin-top: 1.5em;
+				}
+
+				h4 {
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
 	#neal-copyright {
 		flex: 2;
 	}

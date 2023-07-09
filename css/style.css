@@ -527,7 +527,7 @@ a.nav-link {
   padding: 2em;
   width: 70%;
   height: auto;
-  margin: 4rem auto;
+  margin: 4rem auto 0;
 }
 
 #hero__img img {
@@ -564,6 +564,35 @@ a.nav-link {
   margin: 0 0.5em;
   width: 2.25em;
   height: 2.25em;
+}
+
+.skills-bg-wrapper {
+  background-color: #191c19;
+  background-image: url("/assets/svgs/green-blob.svg"), url("/assets/svgs/brown-blob.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top right;
+  background-size: 33%, 15%;
+}
+.skills-bg-wrapper .skills-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  padding-bottom: 4rem;
+}
+.skills-bg-wrapper .skills-container h2 {
+  margin-bottom: 1.5rem;
+}
+.skills-bg-wrapper .skills-container .skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.skills-bg-wrapper .skills-container .skills .skill {
+  display: flex;
+  flex-direction: column;
+}
+.skills-bg-wrapper .skills-container .skills .skill h4 {
+  margin: 0.2rem;
 }
 
 .contact-wrapper {
@@ -730,7 +759,7 @@ Extra extra large	xxl	≥1400px
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .hero {
     padding-top: 2em;
-    margin: 4em 2em;
+    margin: 4em 2em 0;
   }
 
   #hero__img img {
@@ -744,7 +773,7 @@ Extra extra large	xxl	≥1400px
   .hero {
     flex-direction: column;
     padding: 2em 0;
-    margin: 3em auto;
+    margin: 3em auto 0;
     align-items: center;
     width: 80%;
   }
@@ -765,6 +794,19 @@ Extra extra large	xxl	≥1400px
   #hero__img img {
     width: 20em;
     height: auto;
+  }
+
+  .skills-container {
+    padding-bottom: 4em;
+  }
+  .skills-container h2 {
+    margin-bottom: 1.5em;
+  }
+  .skills-container h4 {
+    margin: 0.33em;
+  }
+  .skills-container .skills {
+    gap: 1.5em;
   }
 }
 /* Phones and down */
@@ -792,12 +834,37 @@ Extra extra large	xxl	≥1400px
     margin: 0 auto;
   }
 
+  .skills {
+    flex-direction: column;
+    padding-bottom: 3em;
+  }
+  .skills h3 {
+    margin-top: 2em;
+  }
+  .skills h4 {
+    margin: 0;
+  }
+
   .footer-icons {
     display: none;
   }
 }
 /* Extra small phones only */
 @media screen and (max-width: 320px) {
+  .skills-container h2 {
+    font-size: 2em;
+  }
+  .skills-container .skills {
+    padding-bottom: 2em;
+  }
+  .skills-container .skills .skill h3 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+  }
+  .skills-container .skills .skill h4 {
+    font-size: 1em;
+  }
+
   #neal-copyright {
     flex: 2;
   }
