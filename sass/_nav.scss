@@ -1,25 +1,77 @@
 .navbar {
-	background: $gray-shade !important;
-	backdrop-filter: blur(37.5px) !important;
-}
+	display: flex;
+	align-items: center;
+	background: $beige;
+	padding: 4em;
 
-.navbar-toggler {
-	border-color: $light-gray;
+	.navbar__burger-container {
+		.navbar__burger {
+			display: none;
+		}
+	}
 
-	&:focus {
-		box-shadow: $light-gray-shadow;
+	.navbar__logo-container {
+		flex: 4;
+
+		.navbar__header-logo {
+			width: 16.625rem;
+			height: 5.625rem;
+		}
+	}
+
+	.navbar__links-container {
+		flex: 3;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 37.375rem;
+		height: 3.5625rem;
+		border-radius: 4.6875rem;
+		background: linear-gradient(
+			126deg,
+			rgba(220, 220, 220, 0.5) 0%,
+			rgba(130, 130, 130, 0.3) 99.07%
+		);
+		backdrop-filter: blur(25px);
+
+		.navbar__links {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			list-style-type: none;
+			margin: 0;
+			padding-inline-start: 0;
+
+			.navbar__link-container {
+				&:not(:last-child) {
+					margin-right: 1.5em;
+				}
+
+				.navbar__link {
+					color: $dark-green;
+				}
+			}
+		}
 	}
 }
 
-.navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(229, 226, 215)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+// .navbar-toggler {
+// 	border-color: $beige;
 
-a.navbar-brand,
-a.nav-link {
-	font-size: 1.5rem;
-	font-weight: 600;
-	font-style: normal;
-	line-height: normal;
-	color: $light-gray;
-}
+// 	&:focus {
+// 		box-shadow: $beige-shadow;
+// 	}
+// }
+
+// .navbar-toggler-icon {
+// 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(229, 226, 215)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+// }
+
+// a.navbar-brand,
+// a.nav-link {
+// 	font-size: 1.5rem;
+// 	font-weight: 600;
+// 	font-style: normal;
+// 	line-height: normal;
+// 	color: $beige;
+// }

@@ -28,21 +28,21 @@ h2 {
 	font-size: 3rem;
 	font-weight: 700;
 	line-height: 153.693%;
-	color: $light-gray;
+	color: $beige;
 }
 
 h3 {
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: normal;
-	color: $light-gray;
+	color: $beige;
 }
 
 h4 {
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: normal;
-	color: $light-gray;
+	color: $beige;
 }
 
 p {
@@ -51,7 +51,7 @@ p {
 	line-height: 196.023%;
 
 	&.light {
-		color: $light-gray;
+		color: $beige;
 	}
 
 	&.dark {
@@ -59,7 +59,7 @@ p {
 	}
 
 	&.tiny {
-		color: $light-gray !important;
+		color: $beige !important;
 		font-size: 0.75rem !important;
 		font-style: normal !important;
 		font-weight: 500 !important;
@@ -68,7 +68,7 @@ p {
 }
 
 a {
-	color: $light-gray;
+	color: $beige;
 	text-decoration: none;
 
 	&:hover {
@@ -78,7 +78,7 @@ a {
 
 .small-caps {
 	font-variant: all-small-caps;
-	color: $light-gray;
+	color: $beige;
 	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 400;

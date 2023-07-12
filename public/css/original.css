@@ -9,7 +9,7 @@
 
 body {
 	font-family: "Jost", sans-serif;
-	background-color: $light-gray;
+	background-color: $beige;
 }
 
 .brown {
@@ -21,7 +21,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--gray);
-	color: $light-gray;
+	color: $beige;
 	padding: 1em 2em;
 	width: 100%;
 	position: fixed;
@@ -34,7 +34,7 @@ body {
 .nav-bar .logo {
 	font-size: 24px;
 	line-height: 34.68px;
-	color: $light-gray;
+	color: $beige;
 	text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ body {
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 34.68px;
-	color: $light-gray !important;
+	color: $beige !important;
 	text-decoration: none;
 	margin-right: 2em;
 }
@@ -58,7 +58,7 @@ body {
 .hero {
 	display: flex;
 	align-items: center;
-	background-color: $light-gray;
+	background-color: $beige;
 	width: 80%;
 	height: 50vh;
 	margin: 2.5rem auto 0;
@@ -77,7 +77,7 @@ body {
 	padding: 1rem 2rem;
 	border-radius: 0.4375rem;
 	background-color: #191c19;
-	color: $light-gray;
+	color: $beige;
 	font-size: 1.25rem;
 	font-weight: 700;
 	font-family: "Jost";

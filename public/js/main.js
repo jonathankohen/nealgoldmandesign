@@ -1,4 +1,6 @@
 $(function () {
+	console.log("kill me");
+
 	function checkWidth() {
 		if ($(window).width() <= 992) {
 			$("#hero__img")

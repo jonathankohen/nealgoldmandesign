@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Welcome to Firebase Hosting</title>
+
+		<!-- update the version number as needed -->
+		<script defer src="/__/firebase/10.0.0/firebase-app-compat.js"></script>
+		<!-- include only the Firebase features as you need -->
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-auth-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-database-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-firestore-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-functions-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-messaging-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-storage-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-analytics-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-remote-config-compat.js"
+		></script>
+		<script
+			defer
+			src="/__/firebase/10.0.0/firebase-performance-compat.js"
+		></script>
+		<!--
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+		<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navbar__burger-container">
+				<div class="navbar__burger">
+					<div class="navbar__burger-line"></div>
+					<div class="navbar__burger-line"></div>
+					<div class="navbar__burger-line"></div>
+				</div>
+			</div>
+			<div class="navbar__logo-container">
+				<a href="/index.html">
+					<img
+						src="/assets/svgs/header-logo.svg"
+						onerror="this.src='/assets/images/header-logo.png'"
+						class="navbar__header-logo"
+					/>
+				</a>
+			</div>
+			<div class="navbar__links-container">
+				<div class="navbar__links">
+					<div class="navbar__link-container">
+						<a href="/pages/ux-ui.html" class="navbar__link">
+							UX/UI
+						</a>
+					</div>
+					<div class="navbar__link-container">
+						<a
+							href="/pages/graphic-design.html"
+							class="navbar__link"
+						>
+							Graphic Design
+						</a>
+					</div>
+					<div class="navbar__link-container">
+						<a href="/pages/about.html" class="navbar__link">
+							About
+						</a>
+					</div>
+					<div class="navbar__link-container">
+						<a href="/pages/contact.html" class="navbar__link">
+							Contact
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="hero-bg-wrapper">
+			<div class="hero">
+				<div id="hero__text">
+					<h1>
+						Hi, I'm
+						<span class="brown">Neal</span>
+					</h1>
+					<p class="dark" id="hero__blurb">
+						I'm a UX/UI and graphic designer who crafts seamless
+						user experiences. With a keen eye for interactive
+						design, graphic design, and layouts, I thrive on
+						creating engaging digital journeys that make a lasting
+						impression.
+					</p>
+					<div class="hero__btns">
+						<button class="solid-btn" type="button">
+							Connect with Me
+						</button>
+						<div class="hero__icons">
+							<div class="hero__icon instagram">
+								<a
+									href="https://www.instagram.com/old.capitals"
+									target="_blank"
+								>
+									<img
+										src="/assets/svgs/instagram-square-icon.svg"
+										onerror="this.src='/assets/images/instagram-square-icon.png'"
+									/>
+								</a>
+							</div>
+							<div class="hero__icon dribbble">
+								<a
+									href="https://dribbble.com/narwhalgringleman"
+									target="_blank"
+								>
+									<img
+										src="/assets/svgs/dribbble-square-icon.svg"
+										onerror="this.src='/assets/images/dribbble-square-icon.png'"
+									/>
+								</a>
+							</div>
+							<div class="hero__icon linkedin">
+								<a
+									href="https://www.linkedin.com/in/neal-goldman/"
+									target="_blank"
+								>
+									<img
+										src="/assets/svgs/linkedin-square-icon.svg"
+										onerror="this.src='/assets/images/linkedin-square-icon.png'"
+									/>
+								</a>
+							</div>
+							<div class="hero__icon gmail">
+								<a
+									href="mailto:njgoldman92@gmail.com"
+									target="_blank"
+								>
+									<img
+										src="/assets/svgs/gmail-square-icon.svg"
+										onerror="this.src='/assets/images/gmail-square-icon.png'"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="hero__img">
+					<img src="/assets/images/me-2.png" alt="Picture of Neal" />
+				</div>
+			</div>
+		</div>
+		<div class="skills-bg-wrapper">
+			<div class="skills-container">
+				<h2>
+					<span class="brown" id="experiences">
+						Enhancing User Experiences
+					</span>
+					with Top-Notch UX Design Skills
+				</h2>
+				<div class="skills">
+					<div class="skill">
+						<h3 class="skill__title">User Centric Design</h3>
+						<h4 class="skill__detail">User Research</h4>
+						<h4 class="skill__detail">Journey Mapping</h4>
+						<h4 class="skill__detail">Persona Development</h4>
+						<h4 class="skill__detail">User Flows</h4>
+					</div>
+					<div class="skill">
+						<h3 class="skill__title">Design & Prototyping</h3>
+						<h4 class="skill__detail">Interaction Design</h4>
+						<h4 class="skill__detail">Layout Design</h4>
+						<h4 class="skill__detail">Wireframing & Prototyping</h4>
+						<h4 class="skill__detail">Visual Design</h4>
+					</div>
+					<div class="skill">
+						<h3 class="skill__title">Usability & Evaluation</h3>
+						<h4 class="skill__detail">User Testing</h4>
+						<h4 class="skill__detail">Heuristic Evaluation</h4>
+						<h4 class="skill__detail">Wireframing & Prototyping</h4>
+						<h4 class="skill__detail">Accessibility Evaluation</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<a href="/index.html" id="footer-home-link">Neal</a>
+			<div class="footer-icons">
+				<div class="footer-icon">
+					<a
+						href="https://instagram.com/old.capitals/"
+						target="_blank"
+					>
+						<img
+							src="/assets/svgs/instagram-footer-icon.svg"
+							onerror="this.src='/assets/images/instagram-footer-icon.png'"
+						/>
+					</a>
+				</div>
+				<div class="footer-icon">
+					<a
+						href="https://dribbble.com/narwhalgringleman"
+						target="_blank"
+					>
+						<img
+							src="/assets/svgs/dribbble-footer-icon.svg"
+							onerror="this.src='/assets/images/dribbble-footer-icon.png'"
+						/>
+					</a>
+				</div>
+				<div class="footer-icon">
+					<a
+						href="https://linkedin.com/in/neal-goldman/"
+						target="_blank"
+					>
+						<img
+							src="/assets/svgs/linkedin-footer-icon.svg"
+							onerror="this.src='/assets/images/linkedin-footer-icon.png'"
+						/>
+					</a>
+				</div>
+				<div class="footer-icon">
+					<a href="mailto:njgoldman92@gmail.com" target="_blank">
+						<img
+							src="/assets/svgs/gmail-footer-icon.svg"
+							onerror="this.src='/assets/images/gmail-footer-icon.png'"
+						/>
+					</a>
+				</div>
+			</div>
+			<p class="tiny" id="neal-copyright">Neal Goldman Designs 2023</p>
+		</footer>
+		<!-- <script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
+		></script> -->
+		<script src="/js/jquery-3.7.0.js"></script>
+		<script src="/js/main.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const loadEl = document.querySelector("#load");
+				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				// // The Firebase SDK is initialized and available here!
+				//
+				// firebase.auth().onAuthStateChanged(user => { });
+				// firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+				// firebase.firestore().doc('/foo/bar').get().then(() => { });
+				// firebase.functions().httpsCallable('yourFunction')().then(() => { });
+				// firebase.messaging().requestPermission().then(() => { });
+				// firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+				// firebase.analytics(); // call to activate
+				// firebase.analytics().logEvent('tutorial_completed');
+				// firebase.performance(); // call to activate
+				//
+				// // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+				try {
+					let app = firebase.app();
+					let features = [
+						"auth",
+						"database",
+						"firestore",
+						"functions",
+						"messaging",
+						"storage",
+						"analytics",
+						"remoteConfig",
+						"performance",
+					].filter((feature) => typeof app[feature] === "function");
+					loadEl.textContent = `Firebase SDK loaded with ${features.join(
+						", ",
+					)}`;
+				} catch (e) {
+					console.error(e);
+					loadEl.textContent =
+						"Error loading the Firebase SDK, check the console.";
+				}
+			});
+		</script>
+		<script src="/js/jquery-3.7.0.js"></script>
+		<script src="/js/main.js"></script>
+	</body>
+</html>

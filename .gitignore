@@ -1,3 +1,5 @@
+.firebase
 node_modules
 assets
 lib
+index.js
