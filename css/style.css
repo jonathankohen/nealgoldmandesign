@@ -363,6 +363,10 @@ h1 {
   line-height: normal;
   color: #191c19;
 }
+h1.cs__h1 {
+  color: #e5e2d7 !important;
+  font-weight: 700 !important;
+}
 
 h2 {
   font-size: 3rem;
@@ -396,6 +400,12 @@ p.light {
 p.dark {
   color: #272e29;
 }
+p.cs__p {
+  color: #e5e2d7 !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
 p.tiny {
   color: #e5e2d7 !important;
   font-size: 0.75rem !important;
@@ -425,6 +435,12 @@ body {
   font-family: "Jost", sans-serif !important;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 4rem);
+}
+
 .hr-svg {
   display: block;
   margin: 1rem 0 2rem 0;
@@ -442,6 +458,19 @@ body {
   white-space: nowrap;
   background-color: #191c19;
   color: #e5e2d7;
+}
+
+.outline-btn {
+  padding: 2.5rem;
+  border-radius: 0.4375rem;
+  border: 4px solid #8cc589;
+  color: #8cc589;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  margin-top: 3rem;
 }
 
 .submit-btn {
@@ -462,59 +491,28 @@ body {
   color: #191c19;
 }
 
-footer {
+.navbar {
+  background: #e5e2d7;
+  backdrop-filter: blur(100px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3c453f;
-  padding: 1rem 2rem;
-}
-
-#footer-home-link {
-  flex: 1;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  flex: 2;
-}
-.footer-icons .footer-icon {
-  margin: 0 1rem;
-}
-.footer-icons .footer-icon:hover {
-  cursor: pointer;
-}
-
-#neal-copyright {
-  flex: 1;
-  text-align: right;
-  margin-bottom: 0;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  background: #e5e2d7;
-  padding: 4em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 .navbar .navbar__burger-container .navbar__burger {
   display: none;
 }
-.navbar .navbar__logo-container {
-  flex: 4;
-}
-.navbar .navbar__logo-container .navbar__header-logo {
-  width: 16.625rem;
-  height: 5.625rem;
-}
 .navbar .navbar__links-container {
-  flex: 3;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 37.375rem;
+  max-width: 37.375rem;
   height: 3.5625rem;
+  margin: 0 3rem 0 auto;
+  padding: 0 2rem;
   border-radius: 4.6875rem;
   background: linear-gradient(126deg, rgba(220, 220, 220, 0.5) 0%, rgba(130, 130, 130, 0.3) 99.07%);
   backdrop-filter: blur(25px);
@@ -532,10 +530,43 @@ footer {
 }
 .navbar .navbar__links-container .navbar__links .navbar__link-container .navbar__link {
   color: #191c19;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c453f;
+  padding: 1rem 2rem;
+}
+footer #footer-home-link {
+  flex: 1;
+}
+footer .footer-icons {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+footer .footer-icons .footer-icon {
+  margin: 0 1rem;
+}
+footer .footer-icons .footer-icon:hover {
+  cursor: pointer;
+}
+footer #neal-copyright {
+  flex: 1;
+  text-align: right;
+  margin-bottom: 0;
+  margin: 0;
 }
 
 .hero-bg-wrapper {
   background-color: #e5e2d7;
+  margin-top: 4rem;
 }
 
 .hero {
@@ -610,6 +641,37 @@ footer {
 }
 .skills-bg-wrapper .skills-container .skills .skill h4 {
   margin: 0.2rem;
+}
+
+.cs-bg-wrapper {
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.cs-bg-wrapper.cs1 {
+  background: url("/assets/images/people-1.png") 0 0 no-repeat fixed;
+  background-size: cover;
+}
+.cs-bg-wrapper.cs2 {
+  background: url("/assets/images/typing-on-laptop.png") 0 0 no-repeat fixed;
+  background-size: cover;
+}
+.cs-bg-wrapper .cs__overlay {
+  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+.cs-bg-wrapper .cs__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .contact-wrapper {
@@ -797,12 +859,13 @@ Extra extra large	xxl	≥1400px
     flex-direction: column;
     border: 2px solid #191c19;
     border-radius: 25%;
-    padding: 0.5rem;
+    margin-left: 2rem;
+    padding: 1rem;
     cursor: pointer;
   }
   .navbar .navbar__burger-container .navbar__burger .navbar__burger-line {
-    width: 1.5rem;
-    height: 0.1rem;
+    width: 1.75rem;
+    height: 0.15rem;
     background-color: #191c19;
     border-radius: 25%;
   }
@@ -810,7 +873,8 @@ Extra extra large	xxl	≥1400px
     margin-bottom: 0.5rem;
   }
   .navbar .navbar__logo-container {
-    display: none;
+    margin-left: auto;
+    margin-right: 4rem;
   }
   .navbar .navbar__links-container {
     display: none !important;

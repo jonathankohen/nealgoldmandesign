@@ -1,0 +1,35 @@
+.cs-bg-wrapper {
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+
+	&.cs1 {
+		background: url("/assets/images/people-1.png") 0 0 no-repeat fixed;
+		background-size: cover;
+	}
+	&.cs2 {
+		background: url("/assets/images/typing-on-laptop.png") 0 0 no-repeat
+			fixed;
+		background-size: cover;
+	}
+
+	.cs__overlay {
+		background: rgba(0, 0, 0, 0.75);
+		overflow: hidden;
+		width: 100vw;
+		height: 100vh;
+		// margin-top: 4rem;
+		z-index: 2;
+	}
+
+	.cs__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2em;
+		width: 70%;
+		height: 100%;
+		margin: 0 auto;
+	}
+}

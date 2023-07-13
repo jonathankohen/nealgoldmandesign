@@ -1,8 +1,13 @@
 .navbar {
-	display: flex;
-	align-items: center;
 	background: $beige;
-	padding: 4em;
+	backdrop-filter: blur(100px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
 
 	.navbar__burger-container {
 		.navbar__burger {
@@ -10,22 +15,14 @@
 		}
 	}
 
-	.navbar__logo-container {
-		flex: 4;
-
-		.navbar__header-logo {
-			width: 16.625rem;
-			height: 5.625rem;
-		}
-	}
-
 	.navbar__links-container {
-		flex: 3;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		width: 37.375rem;
+		max-width: 37.375rem;
 		height: 3.5625rem;
+		margin: 0 3rem 0 auto;
+		padding: 0 2rem;
 		border-radius: 4.6875rem;
 		background: linear-gradient(
 			126deg,
@@ -49,29 +46,45 @@
 
 				.navbar__link {
 					color: $dark-green;
+					font-size: 1.25rem;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
 				}
 			}
 		}
 	}
 }
 
-// .navbar-toggler {
-// 	border-color: $beige;
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $gray;
+	padding: 1rem 2rem;
 
-// 	&:focus {
-// 		box-shadow: $beige-shadow;
-// 	}
-// }
+	#footer-home-link {
+		flex: 1;
+	}
 
-// .navbar-toggler-icon {
-// 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(229, 226, 215)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-// }
+	.footer-icons {
+		display: flex;
+		justify-content: center;
+		flex: 2;
 
-// a.navbar-brand,
-// a.nav-link {
-// 	font-size: 1.5rem;
-// 	font-weight: 600;
-// 	font-style: normal;
-// 	line-height: normal;
-// 	color: $beige;
-// }
+		.footer-icon {
+			margin: 0 1rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	#neal-copyright {
+		flex: 1;
+		text-align: right;
+		margin-bottom: 0;
+		margin: 0;
+	}
+}

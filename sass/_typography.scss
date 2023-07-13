@@ -22,6 +22,11 @@ h1 {
 	font-weight: 800;
 	line-height: normal;
 	color: $dark-green;
+
+	&.cs__h1 {
+		color: $beige !important;
+		font-weight: 700 !important;
+	}
 }
 
 h2 {
@@ -56,6 +61,13 @@ p {
 
 	&.dark {
 		color: $dark-gray;
+	}
+
+	&.cs__p {
+		color: $beige !important;
+		font-size: 1.5rem !important;
+		font-weight: 600 !important;
+		line-height: normal !important;
 	}
 
 	&.tiny {
