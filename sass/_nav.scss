@@ -1,10 +1,10 @@
 .navbar {
-	background: $beige;
-	backdrop-filter: blur(100px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	background: $beige;
+	backdrop-filter: blur(100px);
+	width: 100vw;
 	position: fixed;
 	top: 0;
 	z-index: 1000;
@@ -15,13 +15,17 @@
 		}
 	}
 
+	.navbar__logo-container {
+		padding-left: 4rem;
+	}
+
 	.navbar__links-container {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		max-width: 37.375rem;
 		height: 3.5625rem;
-		margin: 0 3rem 0 auto;
+		margin: 0 4rem 0 auto;
 		padding: 0 2rem;
 		border-radius: 4.6875rem;
 		background: linear-gradient(
@@ -56,6 +60,29 @@
 	}
 }
 
+.footer-cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+	flex-shrink: 0;
+	background: #222723;
+
+	.small-solid-btn {
+		background: $green;
+		padding: 1rem 2.5rem;
+		border-radius: 0.4375rem;
+		color: #191c19;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: capitalize;
+		white-space: nowrap;
+	}
+}
+
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -70,6 +97,7 @@ footer {
 	.footer-icons {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		flex: 2;
 
 		.footer-icon {

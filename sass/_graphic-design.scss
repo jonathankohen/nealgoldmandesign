@@ -1,0 +1,29 @@
+.graphic-design__bg-wrapper {
+	background-color: $dark-green;
+	background-image: url("/assets/svgs/green-blob-2.svg"),
+		url("/assets/svgs/brown-blob-2.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: top left, bottom right;
+	background-size: 33%, 15%;
+
+	.graphic-design__container {
+		width: 70%;
+		margin: 0 auto;
+		padding: 6rem 2rem;
+		padding-bottom: 4rem;
+
+		.carousel__wrapper {
+			width: 90%;
+
+			.carousel {
+				display: flex;
+				gap: 2rem;
+				padding-bottom: 3rem;
+
+				.carousel__img {
+					width: 14rem;
+				}
+			}
+		}
+	}
+}

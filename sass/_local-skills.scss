@@ -1,0 +1,34 @@
+.skills-bg-wrapper {
+	background-color: $dark-green;
+	background-image: url("/public/assets/svgs/green-blob.svg"),
+		url("/public/assets/svgs/brown-blob.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: bottom left, top right;
+	background-size: 33%, 15%;
+
+	.skills-container {
+		width: 70%;
+		margin: 0 auto;
+		padding: 6rem 2rem;
+		padding-bottom: 4rem;
+
+		h2 {
+			margin-bottom: 1.5rem;
+		}
+
+		.skills {
+			display: flex;
+			justify-content: space-between;
+			gap: 3rem;
+
+			.skill {
+				display: flex;
+				flex-direction: column;
+
+				h4 {
+					margin: 0.2rem;
+				}
+			}
+		}
+	}
+}

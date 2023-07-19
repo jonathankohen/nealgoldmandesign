@@ -3,12 +3,13 @@
 	overflow: hidden;
 
 	&.cs1 {
-		background: url("/assets/images/people-1.png") 0 0 no-repeat fixed;
+		background: url("/public/assets/images/people-1.png") 0 0 no-repeat
+			fixed;
 		background-size: cover;
 	}
 	&.cs2 {
-		background: url("/assets/images/typing-on-laptop.png") 0 0 no-repeat
-			fixed;
+		background: url("/public/assets/images/typing-on-laptop.png") 0 0
+			no-repeat fixed;
 		background-size: cover;
 	}
 

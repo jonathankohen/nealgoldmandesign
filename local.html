@@ -3,13 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-			crossorigin="anonymous"
-		/> -->
-		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="/public/css/style.css" />
 		<title>Neal Goldman Design</title>
 	</head>
 	<body>
@@ -22,36 +16,38 @@
 				</div>
 			</div>
 			<div class="navbar__logo-container">
-				<a href="/local.html">
+				<a href="/pubilc/local.html">
 					<img
-						src="/assets/svgs/header-logo.svg"
+						src="/public/assets/svgs/header-logo.svg"
 						class="navbar__header-logo"
-						onerror="replaceWithImage()"
 					/>
 				</a>
 			</div>
 			<div class="navbar__links-container">
 				<div class="navbar__links">
 					<div class="navbar__link-container">
-						<a href="/pages/ux-ui.html" class="navbar__link">
+						<a href="/pubilc/pages/ux-ui.html" class="navbar__link">
 							UX/UI
 						</a>
 					</div>
 					<div class="navbar__link-container">
 						<a
-							href="/pages/graphic-design.html"
+							href="/pubilc/pages/graphic-design.html"
 							class="navbar__link"
 						>
 							Graphic Design
 						</a>
 					</div>
 					<div class="navbar__link-container">
-						<a href="/pages/about.html" class="navbar__link">
+						<a href="/pubilc/pages/about.html" class="navbar__link">
 							About
 						</a>
 					</div>
 					<div class="navbar__link-container">
-						<a href="/pages/contact.html" class="navbar__link">
+						<a
+							href="/pubilc/pages/contact.html"
+							class="navbar__link"
+						>
 							Contact
 						</a>
 					</div>
@@ -83,8 +79,7 @@
 									target="_blank"
 								>
 									<img
-										src="/assets/svgs/instagram-square-icon.svg"
-										onerror="this.src='/assets/images/instagram-square-icon.png'"
+										src="/public/assets/svgs/instagram-square-icon.svg"
 									/>
 								</a>
 							</div>
@@ -94,8 +89,7 @@
 									target="_blank"
 								>
 									<img
-										src="/assets/svgs/dribbble-square-icon.svg"
-										onerror="this.src='/assets/images/dribbble-square-icon.png'"
+										src="/public/assets/svgs/dribbble-square-icon.svg"
 									/>
 								</a>
 							</div>
@@ -105,8 +99,7 @@
 									target="_blank"
 								>
 									<img
-										src="/assets/svgs/linkedin-square-icon.svg"
-										onerror="this.src='/assets/images/linkedin-square-icon.png'"
+										src="/public/assets/svgs/linkedin-square-icon.svg"
 									/>
 								</a>
 							</div>
@@ -116,16 +109,18 @@
 									target="_blank"
 								>
 									<img
-										src="/assets/svgs/gmail-square-icon.svg"
-										onerror="this.src='/assets/images/gmail-square-icon.png'"
+										src="/public/assets/svgs/gmail-square-icon.svg"
 									/>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="hero__img">
-					<img src="/assets/images/me-2.png" alt="Picture of Neal" />
+				<div class="hero__img">
+					<img
+						src="/public/assets/images/me-2.png"
+						alt="Picture of Neal"
+					/>
 				</div>
 			</div>
 		</div>
@@ -165,14 +160,14 @@
 		<div class="wrapper cs-bg-wrapper cs1">
 			<div class="cs__overlay">
 				<div class="cs__container">
-					<h1 class="cs__h1">Craigslist</h1>
+					<h2>Craigslist</h2>
 					<p class="cs__p">
 						Redesigned experience with a modernized UI and enhanced
 						user experience, bringing effortless navigation,
 						improved search functionality, and a sleek design to the
 						forefront.
 					</p>
-					<a href="/pages/contact.html" class="outline-btn">
+					<a href="/pubilc/pages/contact.html" class="outline-btn">
 						Read Case Study
 					</a>
 				</div>
@@ -181,21 +176,21 @@
 		<div class="wrapper cs-bg-wrapper cs2">
 			<div class="cs__overlay">
 				<div class="cs__container">
-					<h1 class="cs__h1">Sequency</h1>
+					<h2>Sequency</h2>
 					<p class="cs__p">
 						Redesigned experience with a modernized UI and enhanced
 						user experience, bringing effortless navigation,
 						improved search functionality, and a sleek design to the
 						forefront.
 					</p>
-					<a href="/pages/contact.html" class="outline-btn">
+					<a href="/pubilc/pages/contact.html" class="outline-btn">
 						Read Case Study
 					</a>
 				</div>
 			</div>
 		</div>
 		<footer>
-			<a href="/index.html" id="footer-home-link">Neal</a>
+			<a href="/pubilc/index.html" id="footer-home-link">Neal</a>
 			<div class="footer-icons">
 				<div class="footer-icon">
 					<a
@@ -203,8 +198,7 @@
 						target="_blank"
 					>
 						<img
-							src="/assets/svgs/instagram-footer-icon.svg"
-							onerror="this.src='/assets/images/instagram-footer-icon.png'"
+							src="/public/assets/svgs/instagram-footer-icon.svg"
 						/>
 					</a>
 				</div>
@@ -214,8 +208,7 @@
 						target="_blank"
 					>
 						<img
-							src="/assets/svgs/dribbble-footer-icon.svg"
-							onerror="this.src='/assets/images/dribbble-footer-icon.png'"
+							src="/public/assets/svgs/dribbble-footer-icon.svg"
 						/>
 					</a>
 				</div>
@@ -225,30 +218,19 @@
 						target="_blank"
 					>
 						<img
-							src="/assets/svgs/linkedin-footer-icon.svg"
-							onerror="this.src='/assets/images/linkedin-footer-icon.png'"
+							src="/public/assets/svgs/linkedin-footer-icon.svg"
 						/>
 					</a>
 				</div>
 				<div class="footer-icon">
 					<a href="mailto:njgoldman92@gmail.com" target="_blank">
-						<img
-							src="/assets/svgs/gmail-footer-icon.svg"
-							onerror="this.src='/assets/images/gmail-footer-icon.png'"
-						/>
+						<img src="/public/assets/svgs/gmail-footer-icon.svg" />
 					</a>
 				</div>
 			</div>
 			<p class="tiny" id="neal-copyright">Neal Goldman Designs 2023</p>
 		</footer>
-		<!-- <script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-			crossorigin="anonymous"
-		></script> -->
-		<!-- <script src="/js/jquery-3.7.0.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-		<script src="js/modernizr-custom.js"></script>
 		<script src="/js/main.js"></script>
 	</body>
 </html>
