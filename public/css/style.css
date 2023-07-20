@@ -406,6 +406,20 @@ p.cs__text {
   font-weight: 600 !important;
   line-height: normal !important;
 }
+p.graphic-design__h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 92px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+p.graphic-design__h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 p.footer-cta__text {
   color: #e5e2d7;
   font-size: 1.5rem;
@@ -738,16 +752,64 @@ footer #neal-copyright {
   padding: 6rem 2rem;
   padding-bottom: 4rem;
 }
-.graphic-design__bg-wrapper .graphic-design__container .carousel__wrapper {
-  width: 90%;
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design h2.graphic-design__h2 {
+  color: #e5e2d7;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.graphic-design__bg-wrapper .graphic-design__container .carousel__wrapper .carousel {
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design h3.graphic-design__h3 {
+  color: #e5e2d7;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel .carousel__img {
+  width: 16rem;
+  height: 23rem;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls {
   display: flex;
-  gap: 2rem;
-  padding-bottom: 3rem;
+  justify-content: space-between;
 }
-.graphic-design__bg-wrapper .graphic-design__container .carousel__wrapper .carousel .carousel__img {
-  width: 14rem;
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns {
+  display: flex;
+  gap: 5rem;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__btn {
+  display: flex;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__prev-btn {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__prev-btn .carousel__prev-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__prev-btn .carousel__prev-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__next-btn {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__next-btn .carousel__next-bg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.graphic-design__bg-wrapper .graphic-design__container .graphic-design .carousel__wrapper .carousel__controls .carousel__btns .carousel__next-btn .carousel__next-arrow {
+  position: absolute;
+  top: 20px;
+  left: 26px;
 }
 
 .contact-wrapper {

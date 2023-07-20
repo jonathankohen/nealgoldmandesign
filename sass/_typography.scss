@@ -70,6 +70,22 @@ p {
 		line-height: normal !important;
 	}
 
+	&.graphic-design__h2 {
+		font-size: 64px;
+		font-weight: 700;
+		line-height: 92px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	&.graphic-design__h3 {
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 46px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
 	&.footer-cta__text {
 		color: $beige;
 		font-size: 1.5rem;

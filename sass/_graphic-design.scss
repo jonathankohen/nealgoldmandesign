@@ -12,16 +12,85 @@
 		padding: 6rem 2rem;
 		padding-bottom: 4rem;
 
-		.carousel__wrapper {
-			width: 90%;
+		.graphic-design {
+			h2.graphic-design__h2 {
+				color: $beige;
+				font-size: 4rem;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
 
-			.carousel {
-				display: flex;
-				gap: 2rem;
-				padding-bottom: 3rem;
+			h3.graphic-design__h3 {
+				color: $beige;
+				font-size: 2rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
 
-				.carousel__img {
-					width: 14rem;
+			.carousel__wrapper {
+				// width: 100%;
+
+				.carousel {
+					// 	display: flex;
+					// 	padding-bottom: 3rem;
+					// 	overflow: hidden;
+
+					.carousel__img {
+						width: 16rem;
+						height: 23rem;
+					}
+				}
+
+				.carousel__controls {
+					display: flex;
+					justify-content: space-between;
+
+					.carousel__btns {
+						display: flex;
+						gap: 5rem;
+
+						.carousel__btn {
+							display: flex;
+						}
+
+						.carousel__prev-btn {
+							position: relative;
+							top: 0;
+							left: 0;
+
+							.carousel__prev-bg {
+								position: relative;
+								top: 0;
+								left: 0;
+							}
+
+							.carousel__prev-arrow {
+								position: absolute;
+								top: 20px;
+								left: 20px;
+							}
+						}
+
+						.carousel__next-btn {
+							position: relative;
+							top: 0;
+							left: 0;
+
+							.carousel__next-bg {
+								position: relative;
+								top: 0;
+								left: 0;
+							}
+
+							.carousel__next-arrow {
+								position: absolute;
+								top: 20px;
+								left: 26px;
+							}
+						}
+					}
 				}
 			}
 		}

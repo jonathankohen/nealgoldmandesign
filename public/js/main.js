@@ -1,4 +1,11 @@
 $(function () {
+	// $(".navbar__toggle").on("click", function () {
+	// $(".navbar__menu").toggleClass("navbar__menu--open");
+	// $(".navbar__toggle").toggleClass("navbar__toggle--open");
+	// $(".navbar__menu").slideToggle();
+	// $(".navbar__links-container").toggleClass("navbar__links-container--open");
+	// });
+
 	function checkWidth() {
 		if ($(window).width() <= 992) {
 			$(".hero__img")
@@ -39,10 +46,39 @@ $(function () {
 		checkWidth();
 	});
 
-	// $(".navbar__toggle").on("click", function () {
-	// $(".navbar__menu").toggleClass("navbar__menu--open");
-	// $(".navbar__toggle").toggleClass("navbar__toggle--open");
-	// $(".navbar__menu").slideToggle();
-	// $(".navbar__links-container").toggleClass("navbar__links-container--open");
+	// $(".carousel").slick({
+	// 	// infinite: true,
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 2,
 	// });
+
+	$(".carousel").slick({
+		slidesToShow: 5,
+		slidesToScroll: 2,
+		infinite: false,
+
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+				},
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 300,
+				slidesToScroll: 2,
+				settings: "unslick", // destroys slick
+			},
+		],
+	});
 });
